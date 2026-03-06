@@ -1,6 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
+import 'screens/home_screen.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+
   runApp(const BloodSharingApp());
 }
 
@@ -16,25 +25,6 @@ class BloodSharingApp extends StatelessWidget {
         primarySwatch: Colors.red,
       ),
       home: const HomeScreen(),
-    );
-  }
-}
-
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text("Blood Sharing Community"),
-      ),
-      body: const Center(
-        child: Text(
-          "Welcome to Blood Sharing App 🩸",
-          style: TextStyle(fontSize: 20),
-        ),
-      ),
     );
   }
 }

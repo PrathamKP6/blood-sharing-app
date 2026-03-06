@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "87504906995",
+    "project_id": "blood-sharing-app",
+    "storage_bucket": "blood-sharing-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:87504906995:android:1c2228e89579aa689aa586",
+        "android_client_info": {
+          "package_name": "com.example.blood_sharing_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCb25otEfbPiwhz9Zbb9b8WHib7CQG-3cg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
